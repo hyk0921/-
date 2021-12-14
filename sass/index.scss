@@ -1,0 +1,1105 @@
+html,body,#wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    font: 12px / 1.6 "Hiragino Sans GB", STHeiti, 微软雅黑, "Microsoft YaHei", Helvetica, Arial, serif;
+}
+#wrap {
+   
+    header {
+        height: 40px;
+        background: #333;
+        color: #999;
+        top: 0;
+        position: fixed;
+        z-index: 10000;
+        width: calc(100% - 40px);
+        left: 0;
+        min-width: 990px;
+        line-height: 40px;
+        h1 {
+            float: left;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+            text-indent: -999px;
+            &:hover {
+                a {
+                    background: url(https://static.meishichina.com/v6/img/lib/top-bar110.png) no-repeat scroll 0 -14px/55px auto;
+                }
+            }
+            a {
+                color: #ccc;
+                display: block;
+                width: 55px;
+                height: 14px;
+                margin: 13px 10px 0 0;
+                background: url(https://static.meishichina.com/v6/img/lib/top-bar110.png) no-repeat scroll 0 0 / 55px auto;
+            }
+        }
+        .list{
+            float: left;
+            margin-left: -18px;
+            height: 100%;
+            li {
+                float: left;
+                &:last-child {
+                    position: relative;
+                    cursor: pointer;
+                    width: 30px;
+                    cursor: pointer;
+                    z-index: 99;
+                    height: 40px;
+                    &:hover {
+                        background: #0D0D0D;
+                        >a {
+                            border-top: 6px solid #fff;
+                        }
+                    }
+                    >a {
+                        border: 4px solid transparent;
+                        border-bottom: none;
+                        border-top: 6px solid #ccc ;
+                        padding: 0;
+                        margin: 18px auto 0;
+                        height: 0;
+                        width: 0;
+                    }
+                    div{
+                        position: absolute;
+                        background: #333;
+                        left: -36px;
+                        text-align: center;
+                        top: 40px;
+                    }
+                }
+                a {
+                    color: #666;
+                    font-size: 14px;
+                    color: #ccc;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0 10px;
+                    display: block;
+                    &:hover {
+                        color: #fff;
+                        background: #0D0D0D;
+                    }
+                }
+            }
+        }
+        .about {
+            float: right;
+            a {
+                &:hover {
+                    color: #fff !important;
+                }
+            }
+            li.show2{
+                .bar-box{
+                    ul {
+                        .bar-box-item-0 {
+                            background: #8ecdd8;
+                        }
+                        .bar-box-item-1 {
+                            background: #a6dfea;
+                        }
+                        .bar-box-item-2 {
+                            background: #adecf8;
+                        }
+                        li {
+                            a{
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            li {
+                position: relative;
+                float: left;
+                line-height: 40px;
+                .reg,.login {
+                    font-size: 14px;
+                    color: #ccc;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0 10px;
+                    display: block;
+                    cursor: pointer;
+                    &:hover {
+                        color: #fff;
+                        background: #0D0D0D;
+                    }
+                }
+                .bar-box {
+                    display: none;
+                    background-color: #fff;
+                    position: absolute;
+                    z-index: 199010;
+                    width: 60px;
+                    top: 40px;
+                    right: 0;
+                    text-align: center;
+                    ul{
+                        li {
+                            height: 40px;
+                             width: 60px;
+                             line-height: 40px;
+                             background: #585757;
+                             a {
+                                display: block;
+                                height: 40px;
+                                line-height: 12px;
+                                font-size: 10px;
+                                color: #f1f1f1;
+                                img {
+                                    width: 18px;
+                                    height: 18px;
+                                    margin: 4px auto 2px;
+                                }
+                             }
+                        } 
+                    }
+                    
+                }
+                .qq,.pub,.sign,.cli {
+                    float: right;
+                    display: block;
+                    text-align: center;
+                    width: 60px;
+                    height: 40px;
+                    color: #f1f1f1;
+                    line-height: 12px;
+                    img {
+                        width: 18px;
+                        height: 18px;
+                        margin: 4px auto 2px;
+                    }
+                }
+                .pub {
+                    background: #59C3D1;
+                }
+                .sign {
+                    background: #FFA859;
+                }
+                .cli {
+                    background: #FE5761;
+                    img{
+                        &:last-child{
+                            display: block;
+                            margin: 0;
+                            position: absolute;
+                            top: 45px;
+                            right: 5px;
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        nav {
+            position: relative;
+            padding-top: 50px;
+            height: 65px;
+            margin: auto;
+            width: 990px;
+            line-height: 65px;
+            .logo {
+                float: left;
+                background: url(https://i3.meishichina.com/static/lib/logo.png) no-repeat scroll left center/108px auto;
+                width: 108px;
+                a{
+                    display: block;
+                    height: 60px;
+                    overflow: hidden;
+                    text-indent: -9999px;
+                }
+            }
+            ul {
+                float: right;
+                padding: 0 40px 0 0;
+                height: 60px;
+                li {
+                    float: left;
+                    a {
+                        position: relative;
+                        float: left;
+                        padding: 0 10px 5px;
+                        font-size: 20px;
+                        line-height: 60px;
+                        color: #333;
+                        &:hover{
+                            color: #ff6767;
+                        }
+                    }
+                    .active {
+                        color: #ff6767;
+                    }
+                }
+            }
+            .search {
+                position: relative;
+                float: right;
+                width: 247px;
+                margin-top: 15px;
+                .beef {
+                    position: absolute;
+                    z-index: 99;
+                    top: 30px;
+                    left: 0;
+                    width: 180px;
+                    line-height: 14px;
+                    height: 35px;
+                    box-shadow: 0 0 4px 2px rgba(0,0,0,.1);
+                    p {
+                        line-height: 30px;
+                        margin-top: 3px;
+                        padding-left: 10px;
+                        &:hover {
+                            background: #f1f1f1;
+                        }
+                    }
+                }
+                input {
+                    float: left;
+                    width: 160px;
+                    border: 1px solid #ccc;
+                    border-right: none;
+                    border-radius: 3px 0 0 3px;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 3px;
+                    outline: none;
+                }
+                button {
+                    float: right;
+                    box-sizing: border-box;
+                    border-radius: 0 3px 3px 0;
+                    width: 80px;
+                    height: 28px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-indent: 20px;
+                    outline: none;
+                    border: none;
+                    background: #999 url(https://static.meishichina.com/v6/img/lib/search.png) no-repeat scroll 12px center/16px auto;
+                    &:hover {
+                        color: #fff;
+                        background-color: #ff6767;
+                    }
+                }
+            }
+        }
+    }
+}
+section {
+    .w {
+        width: 990px;
+        margin: auto;
+        
+        h2 {
+            float: left;
+            font-weight: 400;
+            font-size: 20px;
+            margin-right: 20px;
+            padding-bottom: 4px;
+            outline: 0;
+            color: #333;
+            max-width: 100%;
+            overflow: hidden;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            a {
+                color: #333;
+                
+            }
+        }
+        .text {
+            float: right;
+            margin: 0 0 0 20px;
+            font-size: 16px;
+            color: #333;
+            &:hover {
+                color: #ff6767;
+            }
+        }
+        h2.active {
+            color: #ff6767;
+            border-bottom: 3px solid #ff6767;
+            a {
+                color: #ff6767;
+                
+            }
+        }
+        .content {
+            background-color: #fff;
+            padding: 10px 0;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 990px;
+            margin: auto;
+            .banner {
+                position: relative;
+                height: 360px;
+                width: 990px;
+                overflow: hidden;
+                .left,.right{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 40px;
+                    height: 60px;
+                    &:hover {
+                        background: #000;
+                        opacity: .7;
+                        filter: alpha(opacity=70);
+                        transition: opacity .3s;
+                    }
+                    i {
+                        display: block;
+                        background: url(https://static.meishichina.com/v6/img/model/arrow.png) no-repeat scroll 0 0/auto 30px;
+                        width: 17px;
+                        height: 30px;
+                        margin: 15px 12px;
+                    }
+                    
+                }
+                 .left{
+                    left: 220px;
+                }
+                
+                .right{
+                    right: 0;
+                    i {
+                        background-position: -17px 0;
+                    }
+                }
+                .bannerList {
+                    width: 7920px;
+                    height: 100%;
+                    position: absolute;
+                    li {
+                        float: left;
+                        width: 990px;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .iconList {
+                    z-index: 3;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 5px;
+                    li {
+                        cursor: pointer;
+                        margin: 5px;
+                        display: inline-block;
+                        width: 4px;
+                        height: 4px;
+                        border: 3px solid #999;
+                        border-radius: 50%;
+                    }
+                    li.current {
+                        border: 3px solid #ff6767;
+                    }
+                }
+            }
+            .menu {
+                position: absolute;
+                left: 0;
+                top: 10px;
+                width: 220px;
+                height: 330px;
+                padding: 30px 0 0;
+                background: rgba(68,68,68,.4);
+                z-index: 4;
+                >ul {
+                    >li.active {
+                        background: #ff6767;
+                    }
+                    >li {
+                        font-size: 18px;
+                        color: #fff;
+                        .inner {
+                            display: none;
+                            position: absolute;
+                            height: 338px;
+                            width: 390px;
+                            background: #fff;
+                            z-index: 4;
+                            top: 0;
+                            left: 219px;
+                            box-shadow: 3px 2px 5px rgba(0,0,0,.2);
+                            padding: 22px 50px 0;
+                            color: #000;
+                            li.pic {
+                                width: 50%;
+                                a {
+                                    margin-top: 60px;
+                                    width: 100%;
+                                    height: auto;
+                                    img {
+                                        width: 165px;
+                                        height: 165px;
+                                    }
+                                }
+                            }
+                            li.pic2 {
+                                width: 100%;
+                                a {
+                                    width: 100%;
+                                    height: auto;
+                                    img {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                            li {
+                                float: left;
+                                a {
+                                    float: left;
+                                    width: 130px;
+                                    height: 70px;
+                                    text-align: center;
+                                    line-height: 64px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    position: relative;
+                                    margin: 0 0 10px 0;
+                                    color: #333;
+                                    &:hover {
+                                        color: #ff6767;
+                                        span {
+                                            color: #777;
+                                        }
+                                    }
+                                    span {
+                                        bottom: 4px;
+                                        color: #999;
+                                        display: block;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        overflow: hidden;
+                                        position: absolute;
+                                        text-align: center;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            a {
+                                i {
+                                    background-position: -20px 0;
+                                }
+                            }
+                        }
+                        &:nth-child(3){
+                            a {
+                                i {
+                                    background-position: -120px 0;
+                                }
+                            }
+                        }
+                        &:nth-child(4){
+                            a {
+                                i {
+                                    background-position: -60px 0;
+                                }
+                            }
+                        }
+                        &:nth-child(5){
+                            a {
+                                i {
+                                    background-position: -80px 0;
+                                }
+                            }
+                        }
+                        >a {
+                            display: block;
+                            color: #fff;
+                            height: 20px;
+                            line-height: 20px;
+                            padding: 20px 0;
+                            i,b {
+                                width: 20px;
+                                height: 20px;
+                                float: left;
+                                margin: 0 10px 0 20px;
+                                background: rgba(0,0,0,0) url(https://static.meishichina.com/v6/img/model/icon.png) no-repeat scroll 0 0/auto 20px;
+                            }
+                            b {
+                                background-position: -100px 0;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .w2 {
+            position: relative;
+            width: 990px;
+            margin: 10px auto 0;
+            background: #eee;
+            padding: 15px 0;
+            .banner {
+                position: relative;
+                width: 910px;
+                z-index: 1;
+                margin: auto;
+                overflow: hidden;
+                height: 90px;
+                .bannerList {
+                    position: absolute;
+                    width: 910*5px;
+                    height: 100%;
+                    li {
+                        position: relative;
+                        float: left;
+                        height: 90px;
+                        .item1 {
+                            float: left;
+                            width: 303px;
+                            height: 90px;
+                            h2 {
+                                font-size: 20px;
+                                line-height: 24px;
+                                padding: 0 0 8px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                font-weight: 400;
+                                 a{
+                                     color: #333;
+                                 }
+                            }
+                            p {
+                                color: #333;
+                                font-size: 12px;
+                                padding: 0;
+                                span {
+                                    color: #999;
+                                }
+                            }
+                        }
+                    }
+                }
+               
+            }
+            .left,.right {
+                z-index: 3;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                cursor: pointer;
+                opacity: 0;
+                &:hover {
+                    background: #000;
+                    opacity: .3;
+                }
+                i {
+                    display: inline-block;
+                    background: url(https://static.meishichina.com/v6/img/model/arrow.png) no-repeat scroll 0 0/auto 21px;
+                    width: 12px;
+                    height: 21px;
+                    margin: 4.5px 9px;
+                }
+            }
+            .left {
+                left: 5px;
+            }
+            .right {
+                right: 5px;
+                i {
+                    background-position: -12px 0;
+                }
+            }
+        }
+        .w3 {
+            width: 990px;
+            margin: 20px auto 0;
+            overflow: hidden;
+            .item {
+                display: none;
+            }
+            .w3-2 {
+                margin: 0 30px;
+            }
+            .w3-left {
+                width: 310px;
+                float: left;
+                .title {
+                    height: 35px;
+                    border-bottom: 1px solid #E8E8E8;
+                    position: relative;
+                    .list {
+                        line-height: 30px;
+                        font-size: 20px;
+                    }
+                }
+                .item {
+                    .diet {
+                        width: 327px;
+                        overflow: hidden;
+                        li {
+                            float: left;
+                            a {
+                                border: 1px solid #e1e1e1;
+                                display: block;
+                                font-size: 18px;
+                                height: 40px;
+                                line-height: 40px;
+                                margin: 10px 17px 5px 0;
+                                text-align: center;
+                                text-decoration: none;
+                                width: 90px;
+                                color: #333;
+                                &:hover {
+                                    color: #ff6767;
+                                    border: 1px solid #ff6767;
+                                }
+                            }
+                        }
+                    }
+                   > a {
+                        display: block;
+                        padding: 10px 0 0;
+                    }
+                    .rec {
+                        li {
+                            font-size: 16px;
+                            padding: 10px 0 0;
+                            line-height: 26px;
+                            a {
+                                display: block;
+                                color: #333;
+                                &:hover {
+                                    color: #ff6767;
+                                    &::before {
+                                        border: 2px solid #ff6767;
+                                    }
+                                }
+                                &::before {
+                                    border: 2px solid #ccc;
+                                    border-radius: 50%;
+                                    content: "";
+                                    float: left;
+                                    height: 5px;
+                                    margin: 8px 8px 0 2px;
+                                    vertical-align: middle;
+                                    width: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .w5 {
+            width: 990px;
+            overflow: hidden;
+            margin: 40px 0 0 0;
+            .title {
+                overflow: hidden;
+            }
+            .item {
+                margin-top: 10px;
+                display: none;
+                width: 100%;
+                ul {
+                    width: 1040px;
+                    overflow: hidden;
+                    li {
+                        float: left;
+                        margin: 0 23px 0 0;
+                        text-align: center;
+                        width: 230px;
+                        height: 305px;
+                        overflow: hidden;
+                        &:hover {
+                            a {
+                                i {
+                                    img {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            display: block;
+                            overflow: hidden;
+                            position: relative;
+                            color: #333;
+                            &:hover {
+                                color: #ff6767;
+                            }
+                            i {
+                                display: block;
+                                overflow: hidden;
+                                width: 230px;
+                                height: 230px;
+                                img {
+                                    width: 230px;
+                                    height: 230px;
+                                    transition: transform .5s ease-in-out;
+                                }
+                            }
+                            p {
+                                font-size: 18px;
+                                line-height: 120%;
+                                padding: 8px 0 2px;
+                            }
+                        }
+                        .u {
+                            margin: auto;
+                            color: #999;
+                            font-size: 12px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+        .w4 {
+            width: 990px;
+            overflow: hidden;
+            margin: 20px 0 0 0;
+            .vaga-list {
+                width: 100%;
+                 overflow: hidden;
+                 ul {
+                    width: 1011px;
+                    overflow: hidden;
+                     li {
+                        float: left;
+                        margin: 10px 18px 0 0;
+                        width: 126px;
+                        text-align: center;
+                         a {
+                            font-size: 16px;
+                            display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 100%;
+                            color: #333;
+                            &:hover {
+                                color: #ff6767;
+                            }
+                             img {
+                                margin: 0 0 5px 0;
+                                width: 126px;
+                                height: 126px;
+                             }
+                         }
+                         span {
+                            color: #999;
+                         }
+                     }
+                 }
+            }
+        }
+        .w6 {
+            width: 990px;
+            overflow: hidden;
+            margin: 40px 0 0 0;
+            .title {
+                overflow: hidden;
+            }
+            .item {
+                display: none;
+                padding: 0;
+                margin: 10px 0 0 0;
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .pl {
+                    overflow: hidden;
+                    .even {
+                        float: right;
+                    }
+                    li {
+                        padding: 10px 0;
+                        width: 460px;
+                        float: left;
+                        height: 225px;
+                        overflow: hidden;
+
+                        .u {
+                            height: 40px;
+                            >a {
+                                float: left;
+                                img.imgLoad {
+                                    background: #f2f2f2 
+                                    url(https://static.meishichina.com/v6/img/loading-16-16.gif)
+                                    no-repeat scroll center center;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    float: left;
+                                    margin: 0 10px 0 0;
+                                }
+                            }
+                            div {
+                                float: left;
+                                width: 80%;
+                            }
+                            a.t {
+                                color: #111;
+                                display: block;
+                                font-size: 14px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                float: left;
+                                max-width: 590px;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                            span {
+                                color: #666;
+                                font-size: 10px;
+                                float: left;
+                                clear: both;
+                            }
+                        }
+                        div.c {
+                            display: block;
+                            padding: 5px 0 0 0;
+                            .pp {
+                                a {
+                                    color: #666;
+                                    font-size: 14px;
+                                    max-height: 45px;
+                                    overflow: hidden;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            a.clear {
+                                position: relative;
+                                padding: 10px 0 0;
+                                float: left;
+                                img {
+                                    float: left;
+                                    width: 100px;
+                                    height: 100px;
+                                    margin: 0 10px 0 0;
+                                }
+                                
+                            }
+                            span {
+                                clear: both;
+                                float: left;
+                                padding: 10px 0 0;
+                                font-size: 12px;
+                                color: #666;
+                                line-height: 100%;
+                            }
+                        }
+                    }
+                }
+                .img-list {
+                    width: 1040px;
+                    overflow: hidden;
+                    li {
+                        float: left;
+                        margin: 0 23px 0 0;
+                        text-align: center;
+                        width: 230px;
+                        height: 248px;
+                        overflow: hidden;
+                        &:hover {
+                            a {
+                                i {
+                                    img {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            display: block;
+                            overflow: hidden;
+                            text-decoration: none;
+                            position: relative;
+                            color: #333;
+                            &:hover {
+                                color: #ff6767;
+                            }
+                            i {
+                                display: block;
+                                overflow: hidden;
+                                width: 230px;
+                                height: 173px;
+                                img {
+                                    height: 173px;
+                                    width: 230px;
+                                    transition: transform .5s ease-in-out;
+                                }
+                            }
+                            p {
+                                font-size: 18px;
+                                line-height: 120%;
+                                padding: 8px 0 2px;
+                            }
+                        }
+                        a.u {
+                            display: block;
+                            margin: auto;
+                            color: #999;
+                            font-size: 12px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            &:hover {
+                                color: #ff6767;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+footer {
+    padding: 10px 0;
+    .w7 {
+        padding-top: 10px;
+        border-top: 1px solid #e8e8e8;
+        width: 990px;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        a {
+            &:hover {
+                color: #ff6767;
+                text-decoration: underline;
+            }
+        }
+        .ft1 {
+            float: left;
+            color: #666;
+            width: 770px;
+            .c3b {
+                color: #c90;
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 6px;
+                a {
+                    color: #f50;
+                }
+            }
+            .c3c {
+                color: #aaa;
+                font-size: 12px;
+                margin-bottom: 6px;
+                a {
+                    color: #666;
+                    &:hover {
+                        color: #ff6767;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .ft3, .ft4 {
+            float: right;
+            text-align: center;
+        }
+        .ft3 {
+            margin-right: 25px;
+        }
+        .w_links {
+            padding: 15px 0 0 0;
+            clear: both;
+            ul {
+                overflow: hidden;
+                li {
+                    float: left;
+                    padding: 0 12px 0 0;
+                    a {
+                        color: #666;
+                        &:hover {
+                            color: #ff6767;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .w8 {
+        height: 40px;
+        line-height: 40px;
+        width: 990px;
+        margin: 0 auto;
+        padding: 10px 0;
+        p {
+            float: left;
+            text-align: left;
+            img {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            a {
+                color: #666;
+                &:hover {
+                    color: #fd8712;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .last {
+            float: right;
+        }
+    }
+}
+.back {
+    position: fixed;
+    bottom: 10px;
+    height: 58px;
+    width: 58px;
+    left: 50%;
+    transform: translateX(508px);
+    transition: opacity .5s;
+    opacity: 0;
+    a {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 58px;
+        height: 58px;
+        background: url(https://static.meishichina.com/v6/img/wap_a/gotop.png) no-repeat scroll center center / 58px 58px;
+    }
+}

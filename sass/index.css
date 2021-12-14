@@ -1,0 +1,1227 @@
+@charset "UTF-8";
+html, body, #wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  font: 12px / 1.6 "Hiragino Sans GB", STHeiti, 微软雅黑, "Microsoft YaHei", Helvetica, Arial, serif;
+}
+
+#wrap header {
+  height: 40px;
+  background: #333;
+  color: #999;
+  top: 0;
+  position: fixed;
+  z-index: 10000;
+  width: calc(100% - 40px);
+  left: 0;
+  min-width: 990px;
+  line-height: 40px;
+}
+
+#wrap header h1 {
+  float: left;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  text-indent: -999px;
+}
+
+#wrap header h1:hover a {
+  background: url(https://static.meishichina.com/v6/img/lib/top-bar110.png) no-repeat scroll 0 -14px/55px auto;
+}
+
+#wrap header h1 a {
+  color: #ccc;
+  display: block;
+  width: 55px;
+  height: 14px;
+  margin: 13px 10px 0 0;
+  background: url(https://static.meishichina.com/v6/img/lib/top-bar110.png) no-repeat scroll 0 0/55px auto;
+}
+
+#wrap header .list {
+  float: left;
+  margin-left: -18px;
+  height: 100%;
+}
+
+#wrap header .list li {
+  float: left;
+}
+
+#wrap header .list li:last-child {
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  cursor: pointer;
+  z-index: 99;
+  height: 40px;
+}
+
+#wrap header .list li:last-child:hover {
+  background: #0D0D0D;
+}
+
+#wrap header .list li:last-child:hover > a {
+  border-top: 6px solid #fff;
+}
+
+#wrap header .list li:last-child > a {
+  border: 4px solid transparent;
+  border-bottom: none;
+  border-top: 6px solid #ccc;
+  padding: 0;
+  margin: 18px auto 0;
+  height: 0;
+  width: 0;
+}
+
+#wrap header .list li:last-child div {
+  position: absolute;
+  background: #333;
+  left: -36px;
+  text-align: center;
+  top: 40px;
+}
+
+#wrap header .list li a {
+  color: #666;
+  font-size: 14px;
+  color: #ccc;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  display: block;
+}
+
+#wrap header .list li a:hover {
+  color: #fff;
+  background: #0D0D0D;
+}
+
+#wrap header .about {
+  float: right;
+}
+
+#wrap header .about a:hover {
+  color: #fff !important;
+}
+
+#wrap header .about li.show2 .bar-box ul .bar-box-item-0 {
+  background: #8ecdd8;
+}
+
+#wrap header .about li.show2 .bar-box ul .bar-box-item-1 {
+  background: #a6dfea;
+}
+
+#wrap header .about li.show2 .bar-box ul .bar-box-item-2 {
+  background: #adecf8;
+}
+
+#wrap header .about li.show2 .bar-box ul li a {
+  line-height: 40px;
+}
+
+#wrap header .about li {
+  position: relative;
+  float: left;
+  line-height: 40px;
+}
+
+#wrap header .about li .reg, #wrap header .about li .login {
+  font-size: 14px;
+  color: #ccc;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  display: block;
+  cursor: pointer;
+}
+
+#wrap header .about li .reg:hover, #wrap header .about li .login:hover {
+  color: #fff;
+  background: #0D0D0D;
+}
+
+#wrap header .about li .bar-box {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  z-index: 199010;
+  width: 60px;
+  top: 40px;
+  right: 0;
+  text-align: center;
+}
+
+#wrap header .about li .bar-box ul li {
+  height: 40px;
+  width: 60px;
+  line-height: 40px;
+  background: #585757;
+}
+
+#wrap header .about li .bar-box ul li a {
+  display: block;
+  height: 40px;
+  line-height: 12px;
+  font-size: 10px;
+  color: #f1f1f1;
+}
+
+#wrap header .about li .bar-box ul li a img {
+  width: 18px;
+  height: 18px;
+  margin: 4px auto 2px;
+}
+
+#wrap header .about li .qq, #wrap header .about li .pub, #wrap header .about li .sign, #wrap header .about li .cli {
+  float: right;
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 40px;
+  color: #f1f1f1;
+  line-height: 12px;
+}
+
+#wrap header .about li .qq img, #wrap header .about li .pub img, #wrap header .about li .sign img, #wrap header .about li .cli img {
+  width: 18px;
+  height: 18px;
+  margin: 4px auto 2px;
+}
+
+#wrap header .about li .pub {
+  background: #59C3D1;
+}
+
+#wrap header .about li .sign {
+  background: #FFA859;
+}
+
+#wrap header .about li .cli {
+  background: #FE5761;
+}
+
+#wrap header .about li .cli img:last-child {
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 45px;
+  right: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+#wrap main nav {
+  position: relative;
+  padding-top: 50px;
+  height: 65px;
+  margin: auto;
+  width: 990px;
+  line-height: 65px;
+}
+
+#wrap main nav .logo {
+  float: left;
+  background: url(https://i3.meishichina.com/static/lib/logo.png) no-repeat scroll left center/108px auto;
+  width: 108px;
+}
+
+#wrap main nav .logo a {
+  display: block;
+  height: 60px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+#wrap main nav ul {
+  float: right;
+  padding: 0 40px 0 0;
+  height: 60px;
+}
+
+#wrap main nav ul li {
+  float: left;
+}
+
+#wrap main nav ul li a {
+  position: relative;
+  float: left;
+  padding: 0 10px 5px;
+  font-size: 20px;
+  line-height: 60px;
+  color: #333;
+}
+
+#wrap main nav ul li a:hover {
+  color: #ff6767;
+}
+
+#wrap main nav ul li .active {
+  color: #ff6767;
+}
+
+#wrap main nav .search {
+  position: relative;
+  float: right;
+  width: 247px;
+  margin-top: 15px;
+}
+
+#wrap main nav .search .beef {
+  position: absolute;
+  z-index: 99;
+  top: 30px;
+  left: 0;
+  width: 180px;
+  line-height: 14px;
+  height: 35px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+#wrap main nav .search .beef p {
+  line-height: 30px;
+  margin-top: 3px;
+  padding-left: 10px;
+}
+
+#wrap main nav .search .beef p:hover {
+  background: #f1f1f1;
+}
+
+#wrap main nav .search input {
+  float: left;
+  width: 160px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px;
+  outline: none;
+}
+
+#wrap main nav .search button {
+  float: right;
+  box-sizing: border-box;
+  border-radius: 0 3px 3px 0;
+  width: 80px;
+  height: 28px;
+  font-size: 14px;
+  color: #fff;
+  text-indent: 20px;
+  outline: none;
+  border: none;
+  background: #999 url(https://static.meishichina.com/v6/img/lib/search.png) no-repeat scroll 12px center/16px auto;
+}
+
+#wrap main nav .search button:hover {
+  color: #fff;
+  background-color: #ff6767;
+}
+
+section .w {
+  width: 990px;
+  margin: auto;
+}
+
+section .w h2 {
+  float: left;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 20px;
+  padding-bottom: 4px;
+  outline: 0;
+  color: #333;
+  max-width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section .w h2 a {
+  color: #333;
+}
+
+section .w .text {
+  float: right;
+  margin: 0 0 0 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+section .w .text:hover {
+  color: #ff6767;
+}
+
+section .w h2.active {
+  color: #ff6767;
+  border-bottom: 3px solid #ff6767;
+}
+
+section .w h2.active a {
+  color: #ff6767;
+}
+
+section .w .content {
+  background-color: #fff;
+  padding: 10px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 990px;
+  margin: auto;
+}
+
+section .w .content .banner {
+  position: relative;
+  height: 360px;
+  width: 990px;
+  overflow: hidden;
+}
+
+section .w .content .banner .left, section .w .content .banner .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 60px;
+}
+
+section .w .content .banner .left:hover, section .w .content .banner .right:hover {
+  background: #000;
+  opacity: .7;
+  filter: alpha(opacity=70);
+  transition: opacity .3s;
+}
+
+section .w .content .banner .left i, section .w .content .banner .right i {
+  display: block;
+  background: url(https://static.meishichina.com/v6/img/model/arrow.png) no-repeat scroll 0 0/auto 30px;
+  width: 17px;
+  height: 30px;
+  margin: 15px 12px;
+}
+
+section .w .content .banner .left {
+  left: 220px;
+}
+
+section .w .content .banner .right {
+  right: 0;
+}
+
+section .w .content .banner .right i {
+  background-position: -17px 0;
+}
+
+section .w .content .banner .bannerList {
+  width: 7920px;
+  height: 100%;
+  position: absolute;
+}
+
+section .w .content .banner .bannerList li {
+  float: left;
+  width: 990px;
+  height: 100%;
+}
+
+section .w .content .banner .bannerList li img {
+  width: 100%;
+  height: 100%;
+}
+
+section .w .content .banner .iconList {
+  z-index: 3;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+section .w .content .banner .iconList li {
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 3px solid #999;
+  border-radius: 50%;
+}
+
+section .w .content .banner .iconList li.current {
+  border: 3px solid #ff6767;
+}
+
+section .w .content .menu {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 220px;
+  height: 330px;
+  padding: 30px 0 0;
+  background: rgba(68, 68, 68, 0.4);
+  z-index: 4;
+}
+
+section .w .content .menu > ul > li.active {
+  background: #ff6767;
+}
+
+section .w .content .menu > ul > li {
+  font-size: 18px;
+  color: #fff;
+}
+
+section .w .content .menu > ul > li .inner {
+  display: none;
+  position: absolute;
+  height: 338px;
+  width: 390px;
+  background: #fff;
+  z-index: 4;
+  top: 0;
+  left: 219px;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 22px 50px 0;
+  color: #000;
+}
+
+section .w .content .menu > ul > li .inner li.pic {
+  width: 50%;
+}
+
+section .w .content .menu > ul > li .inner li.pic a {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+}
+
+section .w .content .menu > ul > li .inner li.pic a img {
+  width: 165px;
+  height: 165px;
+}
+
+section .w .content .menu > ul > li .inner li.pic2 {
+  width: 100%;
+}
+
+section .w .content .menu > ul > li .inner li.pic2 a {
+  width: 100%;
+  height: auto;
+}
+
+section .w .content .menu > ul > li .inner li.pic2 a img {
+  display: inline-block;
+}
+
+section .w .content .menu > ul > li .inner li {
+  float: left;
+}
+
+section .w .content .menu > ul > li .inner li a {
+  float: left;
+  width: 130px;
+  height: 70px;
+  text-align: center;
+  line-height: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+section .w .content .menu > ul > li .inner li a:hover {
+  color: #ff6767;
+}
+
+section .w .content .menu > ul > li .inner li a:hover span {
+  color: #777;
+}
+
+section .w .content .menu > ul > li .inner li a span {
+  bottom: 4px;
+  color: #999;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+section .w .content .menu > ul > li:nth-child(2) a i {
+  background-position: -20px 0;
+}
+
+section .w .content .menu > ul > li:nth-child(3) a i {
+  background-position: -120px 0;
+}
+
+section .w .content .menu > ul > li:nth-child(4) a i {
+  background-position: -60px 0;
+}
+
+section .w .content .menu > ul > li:nth-child(5) a i {
+  background-position: -80px 0;
+}
+
+section .w .content .menu > ul > li > a {
+  display: block;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  padding: 20px 0;
+}
+
+section .w .content .menu > ul > li > a i, section .w .content .menu > ul > li > a b {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 10px 0 20px;
+  background: transparent url(https://static.meishichina.com/v6/img/model/icon.png) no-repeat scroll 0 0/auto 20px;
+}
+
+section .w .content .menu > ul > li > a b {
+  background-position: -100px 0;
+  float: right;
+}
+
+section .w .w2 {
+  position: relative;
+  width: 990px;
+  margin: 10px auto 0;
+  background: #eee;
+  padding: 15px 0;
+}
+
+section .w .w2 .banner {
+  position: relative;
+  width: 910px;
+  z-index: 1;
+  margin: auto;
+  overflow: hidden;
+  height: 90px;
+}
+
+section .w .w2 .banner .bannerList {
+  position: absolute;
+  width: 4550px;
+  height: 100%;
+}
+
+section .w .w2 .banner .bannerList li {
+  position: relative;
+  float: left;
+  height: 90px;
+}
+
+section .w .w2 .banner .bannerList li .item1 {
+  float: left;
+  width: 303px;
+  height: 90px;
+}
+
+section .w .w2 .banner .bannerList li .item1 h2 {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+section .w .w2 .banner .bannerList li .item1 h2 a {
+  color: #333;
+}
+
+section .w .w2 .banner .bannerList li .item1 p {
+  color: #333;
+  font-size: 12px;
+  padding: 0;
+}
+
+section .w .w2 .banner .bannerList li .item1 p span {
+  color: #999;
+}
+
+section .w .w2 .left, section .w .w2 .right {
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+section .w .w2 .left:hover, section .w .w2 .right:hover {
+  background: #000;
+  opacity: .3;
+}
+
+section .w .w2 .left i, section .w .w2 .right i {
+  display: inline-block;
+  background: url(https://static.meishichina.com/v6/img/model/arrow.png) no-repeat scroll 0 0/auto 21px;
+  width: 12px;
+  height: 21px;
+  margin: 4.5px 9px;
+}
+
+section .w .w2 .left {
+  left: 5px;
+}
+
+section .w .w2 .right {
+  right: 5px;
+}
+
+section .w .w2 .right i {
+  background-position: -12px 0;
+}
+
+section .w .w3 {
+  width: 990px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+
+section .w .w3 .item {
+  display: none;
+}
+
+section .w .w3 .w3-2 {
+  margin: 0 30px;
+}
+
+section .w .w3 .w3-left {
+  width: 310px;
+  float: left;
+}
+
+section .w .w3 .w3-left .title {
+  height: 35px;
+  border-bottom: 1px solid #E8E8E8;
+  position: relative;
+}
+
+section .w .w3 .w3-left .title .list {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+section .w .w3 .w3-left .item .diet {
+  width: 327px;
+  overflow: hidden;
+}
+
+section .w .w3 .w3-left .item .diet li {
+  float: left;
+}
+
+section .w .w3 .w3-left .item .diet li a {
+  border: 1px solid #e1e1e1;
+  display: block;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px 17px 5px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+  color: #333;
+}
+
+section .w .w3 .w3-left .item .diet li a:hover {
+  color: #ff6767;
+  border: 1px solid #ff6767;
+}
+
+section .w .w3 .w3-left .item > a {
+  display: block;
+  padding: 10px 0 0;
+}
+
+section .w .w3 .w3-left .item .rec li {
+  font-size: 16px;
+  padding: 10px 0 0;
+  line-height: 26px;
+}
+
+section .w .w3 .w3-left .item .rec li a {
+  display: block;
+  color: #333;
+}
+
+section .w .w3 .w3-left .item .rec li a:hover {
+  color: #ff6767;
+}
+
+section .w .w3 .w3-left .item .rec li a:hover::before {
+  border: 2px solid #ff6767;
+}
+
+section .w .w3 .w3-left .item .rec li a::before {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  content: "";
+  float: left;
+  height: 5px;
+  margin: 8px 8px 0 2px;
+  vertical-align: middle;
+  width: 5px;
+}
+
+section .w .w5 {
+  width: 990px;
+  overflow: hidden;
+  margin: 40px 0 0 0;
+}
+
+section .w .w5 .title {
+  overflow: hidden;
+}
+
+section .w .w5 .item {
+  margin-top: 10px;
+  display: none;
+  width: 100%;
+}
+
+section .w .w5 .item ul {
+  width: 1040px;
+  overflow: hidden;
+}
+
+section .w .w5 .item ul li {
+  float: left;
+  margin: 0 23px 0 0;
+  text-align: center;
+  width: 230px;
+  height: 305px;
+  overflow: hidden;
+}
+
+section .w .w5 .item ul li:hover a i img {
+  transform: scale(1.1);
+}
+
+section .w .w5 .item ul li a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  color: #333;
+}
+
+section .w .w5 .item ul li a:hover {
+  color: #ff6767;
+}
+
+section .w .w5 .item ul li a i {
+  display: block;
+  overflow: hidden;
+  width: 230px;
+  height: 230px;
+}
+
+section .w .w5 .item ul li a i img {
+  width: 230px;
+  height: 230px;
+  transition: transform .5s ease-in-out;
+}
+
+section .w .w5 .item ul li a p {
+  font-size: 18px;
+  line-height: 120%;
+  padding: 8px 0 2px;
+}
+
+section .w .w5 .item ul li .u {
+  margin: auto;
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section .w .w4 {
+  width: 990px;
+  overflow: hidden;
+  margin: 20px 0 0 0;
+}
+
+section .w .w4 .vaga-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+section .w .w4 .vaga-list ul {
+  width: 1011px;
+  overflow: hidden;
+}
+
+section .w .w4 .vaga-list ul li {
+  float: left;
+  margin: 10px 18px 0 0;
+  width: 126px;
+  text-align: center;
+}
+
+section .w .w4 .vaga-list ul li a {
+  font-size: 16px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  color: #333;
+}
+
+section .w .w4 .vaga-list ul li a:hover {
+  color: #ff6767;
+}
+
+section .w .w4 .vaga-list ul li a img {
+  margin: 0 0 5px 0;
+  width: 126px;
+  height: 126px;
+}
+
+section .w .w4 .vaga-list ul li span {
+  color: #999;
+}
+
+section .w .w6 {
+  width: 990px;
+  overflow: hidden;
+  margin: 40px 0 0 0;
+}
+
+section .w .w6 .title {
+  overflow: hidden;
+}
+
+section .w .w6 .item {
+  display: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+section .w .w6 .item a:hover {
+  text-decoration: underline;
+}
+
+section .w .w6 .item .pl {
+  overflow: hidden;
+}
+
+section .w .w6 .item .pl .even {
+  float: right;
+}
+
+section .w .w6 .item .pl li {
+  padding: 10px 0;
+  width: 460px;
+  float: left;
+  height: 225px;
+  overflow: hidden;
+}
+
+section .w .w6 .item .pl li .u {
+  height: 40px;
+}
+
+section .w .w6 .item .pl li .u > a {
+  float: left;
+}
+
+section .w .w6 .item .pl li .u > a img.imgLoad {
+  background: #f2f2f2 url(https://static.meishichina.com/v6/img/loading-16-16.gif) no-repeat scroll center center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+section .w .w6 .item .pl li .u div {
+  float: left;
+  width: 80%;
+}
+
+section .w .w6 .item .pl li .u a.t {
+  color: #111;
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  max-width: 590px;
+}
+
+section .w .w6 .item .pl li .u a.t:hover {
+  text-decoration: underline;
+}
+
+section .w .w6 .item .pl li .u span {
+  color: #666;
+  font-size: 10px;
+  float: left;
+  clear: both;
+}
+
+section .w .w6 .item .pl li div.c {
+  display: block;
+  padding: 5px 0 0 0;
+}
+
+section .w .w6 .item .pl li div.c .pp a {
+  color: #666;
+  font-size: 14px;
+  max-height: 45px;
+  overflow: hidden;
+}
+
+section .w .w6 .item .pl li div.c .pp a:hover {
+  text-decoration: underline;
+}
+
+section .w .w6 .item .pl li div.c a.clear {
+  position: relative;
+  padding: 10px 0 0;
+  float: left;
+}
+
+section .w .w6 .item .pl li div.c a.clear img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0 10px 0 0;
+}
+
+section .w .w6 .item .pl li div.c span {
+  clear: both;
+  float: left;
+  padding: 10px 0 0;
+  font-size: 12px;
+  color: #666;
+  line-height: 100%;
+}
+
+section .w .w6 .item .img-list {
+  width: 1040px;
+  overflow: hidden;
+}
+
+section .w .w6 .item .img-list li {
+  float: left;
+  margin: 0 23px 0 0;
+  text-align: center;
+  width: 230px;
+  height: 248px;
+  overflow: hidden;
+}
+
+section .w .w6 .item .img-list li:hover a i img {
+  transform: scale(1.1);
+}
+
+section .w .w6 .item .img-list li a {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  color: #333;
+}
+
+section .w .w6 .item .img-list li a:hover {
+  color: #ff6767;
+}
+
+section .w .w6 .item .img-list li a i {
+  display: block;
+  overflow: hidden;
+  width: 230px;
+  height: 173px;
+}
+
+section .w .w6 .item .img-list li a i img {
+  height: 173px;
+  width: 230px;
+  transition: transform .5s ease-in-out;
+}
+
+section .w .w6 .item .img-list li a p {
+  font-size: 18px;
+  line-height: 120%;
+  padding: 8px 0 2px;
+}
+
+section .w .w6 .item .img-list li a.u {
+  display: block;
+  margin: auto;
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section .w .w6 .item .img-list li a.u:hover {
+  color: #ff6767;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+footer .w7 {
+  padding-top: 10px;
+  border-top: 1px solid #e8e8e8;
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+footer .w7 a:hover {
+  color: #ff6767;
+  text-decoration: underline;
+}
+
+footer .w7 .ft1 {
+  float: left;
+  color: #666;
+  width: 770px;
+}
+
+footer .w7 .ft1 .c3b {
+  color: #c90;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+footer .w7 .ft1 .c3b a {
+  color: #f50;
+}
+
+footer .w7 .ft1 .c3c {
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+footer .w7 .ft1 .c3c a {
+  color: #666;
+}
+
+footer .w7 .ft1 .c3c a:hover {
+  color: #ff6767;
+  text-decoration: underline;
+}
+
+footer .w7 .ft3, footer .w7 .ft4 {
+  float: right;
+  text-align: center;
+}
+
+footer .w7 .ft3 {
+  margin-right: 25px;
+}
+
+footer .w7 .w_links {
+  padding: 15px 0 0 0;
+  clear: both;
+}
+
+footer .w7 .w_links ul {
+  overflow: hidden;
+}
+
+footer .w7 .w_links ul li {
+  float: left;
+  padding: 0 12px 0 0;
+}
+
+footer .w7 .w_links ul li a {
+  color: #666;
+}
+
+footer .w7 .w_links ul li a:hover {
+  color: #ff6767;
+  text-decoration: underline;
+}
+
+footer .w8 {
+  height: 40px;
+  line-height: 40px;
+  width: 990px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+footer .w8 p {
+  float: left;
+  text-align: left;
+}
+
+footer .w8 p img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer .w8 p a {
+  color: #666;
+}
+
+footer .w8 p a:hover {
+  color: #fd8712;
+  text-decoration: underline;
+}
+
+footer .w8 .last {
+  float: right;
+}
+
+.back {
+  position: fixed;
+  bottom: 10px;
+  height: 58px;
+  width: 58px;
+  left: 50%;
+  transform: translateX(508px);
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+.back a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 58px;
+  height: 58px;
+  background: url(https://static.meishichina.com/v6/img/wap_a/gotop.png) no-repeat scroll center center/58px 58px;
+}

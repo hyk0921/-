@@ -1,0 +1,317 @@
+.linespan {
+    float: left;
+    height: 18px;
+    margin: 23px 4px 0;
+    border-right: 1px solid #ddd;
+}
+.logo_current {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 15px 0 0 10px;
+    padding: 0 0 0 10px;
+    a {
+        background: #FF838B;
+        border-radius: 5px;
+        color: #fff;
+        display: block;
+        font-size: 20px;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+}
+.nav_wrap2 {
+    height: 34px;
+    border-bottom: 1px solid #ff6767;
+    border-top: 1px solid #ff6767;
+    margin: auto;
+    width: 990px;
+    ul {
+        overflow: hidden;
+        li {
+            float: left;
+            padding: 0 10px;
+            a {
+                display: block;
+                padding: 0 3px;
+                height: 34px;
+                font-size: 14px;
+                line-height: 34px;
+                color: #333;
+                &:hover {
+                    color: #ff6767;
+                }
+            }
+            a.active {
+                color: #ff6767;
+            }
+        }
+        .right {
+            float: right;
+            position: relative;
+            padding: 0 10px;
+        }
+    }
+}
+.mt10 {
+    width: 990px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    img {
+        width: 728px;
+        height: 90px;
+        margin: auto;
+    }
+}
+.w2 {
+    position: relative;
+    width: 990px;
+    background-color: #fff;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    .banner {
+        position: relative;
+        width: 1035px;
+        z-index: 1;
+        margin: auto;
+        overflow: hidden;
+        height: 225px;
+        .bannerList {
+            position: absolute;
+             width: 1035*5px;
+            height: 100%;
+            li {
+                height: 225px;
+                overflow: hidden;
+                position: relative;
+                width: 345px;
+                float: left;
+                padding: 0;
+                a {
+                    width: 300px;
+                    height: 225px;
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                    &:hover {
+                        i {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    i {
+                        display: block;
+                        height: 225px;
+                        overflow: hidden;
+                        width: 300px;
+                        
+                        img {
+                            height: 300px;
+                            margin-top: -37px;
+                            width: 300px;
+                            transition: transform .5s ease-in-out;
+                        }
+                    }
+                    p {
+                        color: #fff;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        font-size: 20px;
+                        line-height: 120%;
+                        display: block;
+                        width: 240px;
+                        padding: 0 30px;
+                        height: 75px;
+                        margin-top: -30px;
+                        text-align: center;
+                        z-index: 2;
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                a .os {
+                    width: 300px;
+                    height: 250px;
+                    background: #000;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    opacity: .2;
+                }
+            }
+        }
+       
+    }
+    .left,.right {
+        z-index: 3;
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:hover {
+            background: #000;
+        }
+        i {
+            display: inline-block;
+            background: url(https://static.meishichina.com/v6/img/lookImg/arrow.png) no-repeat;
+            width: 18px;
+            height: 35px;
+            margin: 7px 0 0 11px;
+        }
+    }
+    .left {
+        left: 0;
+    }
+    .right {
+        right: 0;
+        i {
+            background-position: -18px 0;
+        }
+    }
+}
+.mt20 {
+    margin-top: 20px;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    a {
+        float: left;
+        width: 99px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color: #333;
+        img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 5px;
+            background: #f2f2f2 url(https://static.meishichina.com/v6/img/loading-16-16.gif) no-repeat scroll center center;
+            border-radius: 50%;
+        }
+    }
+}
+#recipeindex_info {
+    margin: 30px auto 0;
+    width: 990px;
+    #recipeindex_info_wrap {
+        background: #fff;
+        padding: 10px 0 5px;
+        width: 990px;
+        overflow: hidden;
+        section {
+            height: 35px;
+            border-bottom: 1px solid #eeeeee;
+            position: relative;
+            line-height: 30px;
+            font-size: 20px;
+            div {
+                float: left;
+                font-weight: 400;
+                font-size: 20px;
+                margin-right: 20px;
+                padding-bottom: 4px;
+                outline: 0;
+                color: #333;
+                max-width: 100%;
+                overflow: hidden;
+                a {
+                    color: #666;
+                    cursor: pointer;
+                }
+            }
+            div.active {
+                color: #ff6767;
+                border-bottom: 3px solid #ff6767;
+                a {
+                    color: #ff6767;
+                }
+            }
+            .right {
+                float: right;
+                margin: 0 0 0 20px;
+                font-size: 16px;
+                color: #333;
+            }
+        }
+    }
+    .more {
+        height: 44px;
+        line-height: 44px;
+        overflow: hidden;
+        margin-top: 10px;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+        color: #ff6767;
+        background-color: #f8f8f8;
+        outline: 0;
+        &:hover {
+            background-color: #ff8d8d;
+            color: #fff;
+        }
+    }
+    .list-wp {
+        width: 990px;
+        margin: 10px auto 0;
+        .list {
+            width: 1040px;
+            overflow: hidden;
+            li {
+                float: left;
+                margin: 0 23px 0 0;
+                text-align: center;
+                width: 230px;
+                height: 305px;
+                overflow: hidden;
+                a {
+                    display: block;
+                    overflow: hidden;
+                    text-decoration: none;
+                    position: relative;
+                    color: #333;
+                    i {
+                        display: block;
+                        overflow: hidden;
+                        width: 230px;
+                        height: 230px;
+                        img {
+                            width: 230px;
+                            height: 230px;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 120%;
+                        padding: 8px 0 2px;
+                    }
+                }
+                a.u {
+                    margin: auto;
+                    color: #999;
+                    font-size: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+    }
+}

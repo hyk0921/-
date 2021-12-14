@@ -1,0 +1,107 @@
+.w {
+  background-color: #fff;
+  padding: 10px 0;
+  width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.w .zhen_listing_index {
+  width: 1111px;
+  overflow: hidden;
+}
+
+.w .mt10 {
+  margin-top: 10px;
+}
+
+.w .mt10 ul {
+  overflow: hidden;
+  display: none;
+}
+
+.w .mt10 ul li {
+  float: left;
+  margin: 0 45px 20px 0;
+  text-align: center;
+  width: 300px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.w .mt10 ul li a {
+  display: block;
+  overflow: hidden;
+  color: #333;
+}
+
+.w .mt10 ul li a:hover i img {
+  transform: scale(1.1);
+}
+
+.w .mt10 ul li a:hover p {
+  color: #ff6767;
+}
+
+.w .mt10 ul li a i {
+  display: block;
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+}
+
+.w .mt10 ul li a i img {
+  width: 300px;
+  height: 300px;
+  margin-top: -25px;
+  transition: all .5s ease-in-out;
+}
+
+.w .mt10 ul li a p {
+  font-size: 18px;
+  line-height: 120%;
+  padding: 5px 0;
+}
+
+.w .ui-page {
+  overflow: hidden;
+  line-height: 34px;
+  height: 36px;
+  font-size: 0;
+  text-align: center;
+}
+
+.w .ui-page .ui-page-inner {
+  display: inline-block;
+}
+
+.w .ui-page .now_page {
+  border: 1px solid #ff6767;
+  background-color: #ff6767;
+  color: #fff;
+  cursor: default;
+}
+
+.w .ui-page .now_page:hover {
+  border: 1px solid #ff6767;
+  background-color: #ff6767;
+  color: #fff;
+  cursor: default;
+}
+
+.w .ui-page a:hover {
+  color: #ff6767;
+  border-color: #ff6767;
+}
+
+.w .ui-page a, .w .ui-page span {
+  font-size: 14px;
+  margin-right: 5px;
+  padding: 0 11px;
+  border: 1px solid #eeeeee;
+  vertical-align: top;
+  color: #999;
+  background-color: #f8f8f8;
+  float: left;
+}

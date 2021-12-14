@@ -1,0 +1,98 @@
+.w {
+    background-color: #fff;
+    padding: 10px 0;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    .zhen_listing_index {
+        width: 1111px;
+        overflow: hidden;
+    }
+    .mt10 {
+        margin-top: 10px;
+        ul {
+            overflow: hidden;
+            display: none;
+            li {
+                float: left;
+                margin: 0 45px 20px 0;
+                text-align: center;
+                width: 300px;
+                height: 320px;
+                overflow: hidden;
+                a {
+                    display: block;
+                    overflow: hidden;
+                    color: #333;
+                    &:hover {
+                        i {
+                            img{
+                                transform: scale(1.1);
+                            }
+                        }
+                        p {
+                            color: #ff6767;
+                        }
+                    }
+                    i {
+                        display: block;
+                        overflow: hidden;
+                        width: 300px;
+                        height: 250px;
+                        
+                         img {
+                            width: 300px;
+                            height: 300px;
+                            margin-top: -25px;
+                            transition: all .5s ease-in-out;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 120%;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+    .ui-page {
+        overflow: hidden;
+        line-height: 34px;
+        height: 36px;
+        font-size: 0;
+        text-align: center;
+        .ui-page-inner {
+            display: inline-block
+        }
+        .now_page {
+            border: 1px solid #ff6767;
+            background-color: #ff6767;
+            color: #fff;
+            cursor: default;
+            &:hover {
+                border: 1px solid #ff6767;
+                background-color: #ff6767;
+                color: #fff;
+                cursor: default;
+            }
+        }
+        a {
+            &:hover {
+                color: #ff6767;
+                border-color: #ff6767;
+            }
+        }
+    }
+    .ui-page a, .ui-page span {
+        font-size: 14px;
+        margin-right: 5px;
+        padding: 0 11px;
+        border: 1px solid #eeeeee;
+        vertical-align: top;
+        color: #999;
+        background-color: #f8f8f8;
+        float: left;
+    }
+}

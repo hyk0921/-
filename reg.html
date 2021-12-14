@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url(https://i3.meishichina.com/attachment/magic/2015/11/24/201511241448337585505.jpg);
+        }
+        .content {
+            width: 500px;
+            height: 400px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        input {
+            padding-left: 5px;
+            margin-top: 20px;
+            outline: none;
+            width: 220px;
+            height: 30px;
+            background: rgb(255, 255, 255, .8);
+            border: none;
+            border-radius: 16px;
+        }
+
+        button {
+            display: block;
+            margin-top: 30px;
+            width: 80px;
+            height: 35px;
+            margin-left: 200px;
+            background-color: #666;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+        }
+
+        input::-webkit-input-placeholder {
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content">
+            <h2>注册页面</h2>
+            用户名&nbsp;&nbsp;: <input type="text" placeholder="请输入用户名"><span></span><br>
+            密 &nbsp;&nbsp;码&nbsp;&nbsp;: <input type="password" placeholder="请输入密码"><span></span><br>
+            确认密码:<input type="password" placeholder="请再次输入密码"><span></span><br>
+            手机号&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" placeholder="请输入手机号"><span></span><br>
+            邮&nbsp;&nbsp;箱&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" placeholder="请输入邮箱"><span></span>
+            <button>注册</button>
+        </div>
+    </div>
+    <script>
+        var inputNodes = document.querySelectorAll("input")
+        var btn = document.querySelector("button")
+        var pat1 = /^[^\d](\w|\+|\-|\*|\%|\&){5,17}$/
+        var pat2 = /^[\da-zA-Z]{6,10}$/
+        var pat4 = /^(158|186)\d{8}$/
+        var pat5 = /^\w{5,11}@(qq|126|163|sohu)\.(com|cn)$/
+        //    console.log(pat1.test("sssssss"));
+        btn.onclick = function () {
+            var value1 = inputNodes[0].value.trim()
+            var value2 = inputNodes[1].value.trim()
+            var value3 = inputNodes[2].value.trim()
+            var value4 = inputNodes[3].value.trim()
+            var value5 = inputNodes[4].value.trim()
+            var obj = {
+                admin: value1,
+                pwd: value2
+            }
+            if (pat1.test(value1)) {
+                if (pat2.test(value2)) {
+                    if (value2 == value3) {
+                        if (pat4.test(value4)) {
+                            if (pat5.test(value5)) {
+                                sessionStorage.setItem("data", JSON.stringify(obj))
+                                location.href = "login.html"
+                                inputNodes.forEach(function (item) {
+                                    item.value = ""
+                                })
+                            } else {
+                                alert("邮箱不合法")
+                                inputNodes.forEach(function (item) {
+                                    item.value = ""
+                                })
+                            }
+                        } else {
+                            alert("手机号格式错误");
+                            inputNodes.forEach(function (item) {
+                                item.value = ""
+                            })
+                        }
+                    } else {
+                        alert("密码不一致");
+                        inputNodes.forEach(function (item) {
+                            item.value = ""
+                        })
+                    }
+                } else {
+                    alert("密码格式错误 由数字字母组成 长度6-10位");
+                    inputNodes.forEach(function (item) {
+                        item.value = ""
+                    })
+                }
+            } else {
+                alert("用户名输入错误 包含数字字母下划线及+-*%&等特殊符号  长度6-18位   不能以数字开头");
+                inputNodes.forEach(function (item) {
+                    item.value = ""
+                })
+            }
+        }
+        var span = document.querySelectorAll("span")
+        for (var i = 0; i < span.length; i++) {
+            span[i].onmousedown = function () {
+                return false
+            }
+        }
+        var arr = ["用户名", "密码", "确认密码", "手机号", "邮箱"]
+        var ar = [1, 2, 4, 5]
+        var value = ""
+        function isYes(i, patx) {
+            inputNodes[i].onkeyup = function () {
+                value = inputNodes[i].value.trim()
+                if (i == 1) {
+                    var nextValue = inputNodes[i + 1].value.trim()
+                    if (value == nextValue) {
+                        span[i].innerHTML = `${arr[i]}合格`
+                        span[i].style.color = "rgb(52,113,14)"
+                        span[i + 1].innerHTML = `${arr[i + 1]}合格`
+                        span[i + 1].style.color = "rgb(52,113,14)"
+                    } else {
+                        if (nextValue != "") {
+                            span[i + 1].innerHTML = `${arr[i + 1]}不合格`
+                            span[i + 1].style.color = "red"
+                        }
+                    }
+                }
+                if (i == 2) {
+                    var pwdValue = inputNodes[i - 1].value.trim()
+                    if (value == pwdValue) {
+                        span[i].innerHTML = `${arr[i]}合格`
+                        span[i].style.color = "rgb(52,113,14)"
+                    } else {
+                        span[i].innerHTML = `${arr[i]}不合格`
+                        span[i].style.color = "red"
+                    }
+                }
+                if (patx) {
+                    if (patx.test(value)) {
+                        span[i].innerHTML = `${arr[i]}合格`
+                        span[i].style.color = "rgb(52,113,14)"
+                    } else {
+                        span[i].innerHTML = `${arr[i]}不合格`
+                        span[i].style.color = "red"
+                    }
+                }
+            }
+        }
+        isYes(0, pat1)
+        isYes(1, pat2)
+        isYes(2)
+        isYes(3, pat4)
+        isYes(4, pat5)
+    </script>
+</body>
+
+</html>
